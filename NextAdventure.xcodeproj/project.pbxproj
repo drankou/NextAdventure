@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		1E91E11025CED963003A0702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E10F25CED963003A0702 /* AppDelegate.swift */; };
 		1E91E11225CED963003A0702 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E11125CED963003A0702 /* SceneDelegate.swift */; };
-		1E91E11425CED963003A0702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E11325CED963003A0702 /* ViewController.swift */; };
-		1E91E11725CED963003A0702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E91E11525CED963003A0702 /* Main.storyboard */; };
+		1E91E11425CED963003A0702 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E11325CED963003A0702 /* HomeViewController.swift */; };
 		1E91E11925CED965003A0702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E91E11825CED965003A0702 /* Assets.xcassets */; };
 		1E91E11C25CED965003A0702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E91E11A25CED965003A0702 /* LaunchScreen.storyboard */; };
 		1E91E12725CED965003A0702 /* NextAdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E12625CED965003A0702 /* NextAdventureTests.swift */; };
 		1E91E13225CED965003A0702 /* NextAdventureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E13125CED965003A0702 /* NextAdventureUITests.swift */; };
+		1E91E14325CEDA62003A0702 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E14225CEDA62003A0702 /* Coordinator.swift */; };
+		1E91E14825CEDA95003A0702 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E14725CEDA95003A0702 /* AppCoordinator.swift */; };
+		1E91E15425CEDDD7003A0702 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E15325CEDDD7003A0702 /* HomeView.swift */; };
+		1E91E16B25CEEC84003A0702 /* Sansation-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E91E16425CEEBE2003A0702 /* Sansation-Light.ttf */; };
+		1E91E17025CEF051003A0702 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E91E16F25CEF04F003A0702 /* Roboto-Regular.ttf */; };
+		1E91E17525CEF14D003A0702 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E17425CEF14D003A0702 /* AnimatedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +43,7 @@
 		1E91E10C25CED963003A0702 /* NextAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E91E10F25CED963003A0702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E91E11125CED963003A0702 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E91E11325CED963003A0702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1E91E11625CED963003A0702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E91E11325CED963003A0702 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1E91E11825CED965003A0702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E91E11B25CED965003A0702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E91E11D25CED965003A0702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		1E91E12D25CED965003A0702 /* NextAdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextAdventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E91E13125CED965003A0702 /* NextAdventureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAdventureUITests.swift; sourceTree = "<group>"; };
 		1E91E13325CED965003A0702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E91E14225CEDA62003A0702 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1E91E14725CEDA95003A0702 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1E91E15325CEDDD7003A0702 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1E91E16425CEEBE2003A0702 /* Sansation-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansation-Light.ttf"; sourceTree = "<group>"; };
+		1E91E16F25CEF04F003A0702 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		1E91E17425CEF14D003A0702 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +109,10 @@
 		1E91E10E25CED963003A0702 /* NextAdventure */ = {
 			isa = PBXGroup;
 			children = (
-				1E91E10F25CED963003A0702 /* AppDelegate.swift */,
-				1E91E11125CED963003A0702 /* SceneDelegate.swift */,
-				1E91E11325CED963003A0702 /* ViewController.swift */,
-				1E91E11525CED963003A0702 /* Main.storyboard */,
-				1E91E11825CED965003A0702 /* Assets.xcassets */,
-				1E91E11A25CED965003A0702 /* LaunchScreen.storyboard */,
+				1E91E15225CEDDC7003A0702 /* Views */,
+				1E91E17925CEF228003A0702 /* Controllers */,
+				1E91E17A25CEF231003A0702 /* Supporting Files */,
+				1E91E16325CEEBD1003A0702 /* Fonts */,
 				1E91E11D25CED965003A0702 /* Info.plist */,
 			);
 			path = NextAdventure;
@@ -126,6 +134,45 @@
 				1E91E13325CED965003A0702 /* Info.plist */,
 			);
 			path = NextAdventureUITests;
+			sourceTree = "<group>";
+		};
+		1E91E15225CEDDC7003A0702 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E91E15325CEDDD7003A0702 /* HomeView.swift */,
+				1E91E17425CEF14D003A0702 /* AnimatedButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E91E16325CEEBD1003A0702 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1E91E16F25CEF04F003A0702 /* Roboto-Regular.ttf */,
+				1E91E16425CEEBE2003A0702 /* Sansation-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1E91E17925CEF228003A0702 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E91E11325CED963003A0702 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1E91E17A25CEF231003A0702 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E91E10F25CED963003A0702 /* AppDelegate.swift */,
+				1E91E11125CED963003A0702 /* SceneDelegate.swift */,
+				1E91E11825CED965003A0702 /* Assets.xcassets */,
+				1E91E11A25CED965003A0702 /* LaunchScreen.storyboard */,
+				1E91E14225CEDA62003A0702 /* Coordinator.swift */,
+				1E91E14725CEDA95003A0702 /* AppCoordinator.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +278,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E91E16B25CEEC84003A0702 /* Sansation-Light.ttf in Resources */,
 				1E91E11C25CED965003A0702 /* LaunchScreen.storyboard in Resources */,
+				1E91E17025CEF051003A0702 /* Roboto-Regular.ttf in Resources */,
 				1E91E11925CED965003A0702 /* Assets.xcassets in Resources */,
-				1E91E11725CED963003A0702 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E91E11425CED963003A0702 /* ViewController.swift in Sources */,
+				1E91E14325CEDA62003A0702 /* Coordinator.swift in Sources */,
+				1E91E11425CED963003A0702 /* HomeViewController.swift in Sources */,
+				1E91E17525CEF14D003A0702 /* AnimatedButton.swift in Sources */,
+				1E91E14825CEDA95003A0702 /* AppCoordinator.swift in Sources */,
+				1E91E15425CEDDD7003A0702 /* HomeView.swift in Sources */,
 				1E91E11025CED963003A0702 /* AppDelegate.swift in Sources */,
 				1E91E11225CED963003A0702 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1E91E11525CED963003A0702 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E91E11625CED963003A0702 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1E91E11A25CED965003A0702 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R6HKL95CT;
 				INFOPLIST_FILE = NextAdventure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = drankou.NextAdventure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,6 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R6HKL95CT;
 				INFOPLIST_FILE = NextAdventure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +511,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = drankou.NextAdventure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
