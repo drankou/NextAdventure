@@ -41,7 +41,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @objc func exploreButtonTapped(){
-        coordinator?.showResults(userCoordinate: userCoordinate)
+        coordinator?.showFlights(userCoordinate: userCoordinate)
     }
     
     override func viewWillAppear(_ animated: Bool) {

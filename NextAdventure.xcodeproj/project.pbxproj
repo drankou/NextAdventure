@@ -27,6 +27,9 @@
 		1E91E1BD25D04B09003A0702 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1BC25D04B09003A0702 /* Endpoint.swift */; };
 		1E91E1C325D05094003A0702 /* UIViewController+UIActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1C225D05094003A0702 /* UIViewController+UIActivityIndicator.swift */; };
 		1E91E1CB25D141FD003A0702 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1CA25D141FD003A0702 /* ImageCache.swift */; };
+		1E91E1E025D1650E003A0702 /* FlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1DF25D1650E003A0702 /* FlightDetailViewController.swift */; };
+		1E91E1E525D165AD003A0702 /* FlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1E425D165AD003A0702 /* FlightDetailView.swift */; };
+		1E91E1EA25D16E0D003A0702 /* ImagesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1E925D16E0D003A0702 /* ImagesEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		1E91E1BC25D04B09003A0702 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1E91E1C225D05094003A0702 /* UIViewController+UIActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIActivityIndicator.swift"; sourceTree = "<group>"; };
 		1E91E1CA25D141FD003A0702 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		1E91E1DF25D1650E003A0702 /* FlightDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewController.swift; sourceTree = "<group>"; };
+		1E91E1E425D165AD003A0702 /* FlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailView.swift; sourceTree = "<group>"; };
+		1E91E1E925D16E0D003A0702 /* ImagesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 				1E91E15325CEDDD7003A0702 /* HomeView.swift */,
 				1E91E17425CEF14D003A0702 /* AnimatedButton.swift */,
 				1E91E1AC25CF2D21003A0702 /* FlightCollectionViewCell.swift */,
+				1E91E1E425D165AD003A0702 /* FlightDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 			children = (
 				1E91E11325CED963003A0702 /* HomeViewController.swift */,
 				1E91E19325CEFBF5003A0702 /* ResultsViewController.swift */,
+				1E91E1DF25D1650E003A0702 /* FlightDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 				1E91E19F25CF1CD6003A0702 /* NetworkManager.swift */,
 				1E91E1BC25D04B09003A0702 /* Endpoint.swift */,
 				1E91E1CA25D141FD003A0702 /* ImageCache.swift */,
+				1E91E1E925D16E0D003A0702 /* ImagesEndpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -351,11 +360,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E91E1EA25D16E0D003A0702 /* ImagesEndpoint.swift in Sources */,
 				1E91E14325CEDA62003A0702 /* Coordinator.swift in Sources */,
 				1E91E11425CED963003A0702 /* HomeViewController.swift in Sources */,
 				1E91E1A025CF1CD6003A0702 /* NetworkManager.swift in Sources */,
 				1E91E17525CEF14D003A0702 /* AnimatedButton.swift in Sources */,
 				1E91E14825CEDA95003A0702 /* AppCoordinator.swift in Sources */,
+				1E91E1E025D1650E003A0702 /* FlightDetailViewController.swift in Sources */,
 				1E91E1AD25CF2D21003A0702 /* FlightCollectionViewCell.swift in Sources */,
 				1E91E1C325D05094003A0702 /* UIViewController+UIActivityIndicator.swift in Sources */,
 				1E91E15425CEDDD7003A0702 /* HomeView.swift in Sources */,
@@ -363,6 +374,7 @@
 				1E91E11025CED963003A0702 /* AppDelegate.swift in Sources */,
 				1E91E11225CED963003A0702 /* SceneDelegate.swift in Sources */,
 				1E91E1BD25D04B09003A0702 /* Endpoint.swift in Sources */,
+				1E91E1E525D165AD003A0702 /* FlightDetailView.swift in Sources */,
 				1E91E1CB25D141FD003A0702 /* ImageCache.swift in Sources */,
 				1E91E19425CEFBF5003A0702 /* ResultsViewController.swift in Sources */,
 			);

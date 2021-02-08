@@ -144,7 +144,7 @@ class FlightCellContentView: UIView, UIContentView {
         stack.alignment = .center
         stack.distribution = .equalSpacing
         stack.isLayoutMarginsRelativeArrangement = true
-        stack.layoutMargins = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
+        stack.layoutMargins = UIEdgeInsets(top: 0, left: 15, bottom: 8, right: 15)
         stack.translatesAutoresizingMaskIntoConstraints = false
         
         return stack

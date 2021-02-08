@@ -22,10 +22,17 @@ class AppCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func showResults(userCoordinate: CLLocationCoordinate2D) {
+    func showFlights(userCoordinate: CLLocationCoordinate2D) {
         let resultsVC = ResultsViewController()
         resultsVC.coordinator = self
         resultsVC.userCoordinate = userCoordinate
         navigationController.pushViewController(resultsVC, animated: true)
+    }
+    
+    func showFlightDetail(for flight: Flight) {
+        let flightDetailVC = FlightDetailViewController()
+        flightDetailVC.coordinator = self
+        flightDetailVC.flight = flight
+        navigationController.pushViewController(flightDetailVC, animated: true)
     }
 }

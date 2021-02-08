@@ -98,8 +98,8 @@ class ResultsViewController: UIViewController {
                 self.flights = flights
                 
                 snapshot.appendItems(self.flights, toSection: .main)
+                self.dataSource.apply(snapshot, animatingDifferences: false)
                 self.hideActivityIndicator()
-                self.dataSource.apply(snapshot, animatingDifferences: true)
             }.store(in: &subscriptions)
     }
     
@@ -122,5 +122,8 @@ class ResultsViewController: UIViewController {
 }
 
 extension ResultsViewController: UICollectionViewDelegate {
-        //show detail
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let flight = dataSource.itemIdentifier(for: indexPath) else { return }
+        coordinator?.showFlightDetail(for: flight)
+    }
 }
