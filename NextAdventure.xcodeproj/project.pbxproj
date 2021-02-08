@@ -26,6 +26,7 @@
 		1E91E1AD25CF2D21003A0702 /* FlightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1AC25CF2D21003A0702 /* FlightCollectionViewCell.swift */; };
 		1E91E1BD25D04B09003A0702 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1BC25D04B09003A0702 /* Endpoint.swift */; };
 		1E91E1C325D05094003A0702 /* UIViewController+UIActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1C225D05094003A0702 /* UIViewController+UIActivityIndicator.swift */; };
+		1E91E1CB25D141FD003A0702 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1CA25D141FD003A0702 /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		1E91E1AC25CF2D21003A0702 /* FlightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E91E1BC25D04B09003A0702 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1E91E1C225D05094003A0702 /* UIViewController+UIActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIActivityIndicator.swift"; sourceTree = "<group>"; };
+		1E91E1CA25D141FD003A0702 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 			children = (
 				1E91E19F25CF1CD6003A0702 /* NetworkManager.swift */,
 				1E91E1BC25D04B09003A0702 /* Endpoint.swift */,
+				1E91E1CA25D141FD003A0702 /* ImageCache.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				1E91E11025CED963003A0702 /* AppDelegate.swift in Sources */,
 				1E91E11225CED963003A0702 /* SceneDelegate.swift in Sources */,
 				1E91E1BD25D04B09003A0702 /* Endpoint.swift in Sources */,
+				1E91E1CB25D141FD003A0702 /* ImageCache.swift in Sources */,
 				1E91E19425CEFBF5003A0702 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

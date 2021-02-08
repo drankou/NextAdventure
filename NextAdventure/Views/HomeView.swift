@@ -52,9 +52,10 @@ class HomeView: UIView {
         imageView.isUserInteractionEnabled = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
 
-        let overlay = UIView(frame: imageView.frame)
-        overlay.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.15);
-        imageView.addSubview(overlay)
+        let overlay = CALayer()
+        overlay.frame = UIScreen.main.bounds
+        overlay.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.15).cgColor;
+        imageView.layer.insertSublayer(overlay, at: 0)
         
         return imageView
     }()

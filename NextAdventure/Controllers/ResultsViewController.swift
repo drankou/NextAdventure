@@ -53,8 +53,21 @@ class ResultsViewController: UIViewController {
             content.cityTo = flight.cityTo
             content.departureDate = flight.departureDate
             content.price = flight.price
-
-            //async image loading
+            content.backgroundImage = flight.image ?? ImageCache.placeholder
+            
+            ImageCache.publicCache.loadImage(from: URL(string: flight.destinationImageURL)!)
+                .receive(on: DispatchQueue.main)
+                .sink { (image) in
+                    if image != flight.image {
+                        var updatedSnapshot = self.dataSource.snapshot()
+                        if let index = updatedSnapshot.indexOfItem(flight) {
+                            let flight = self.flights[index]
+                            flight.image = image
+                            updatedSnapshot.reloadItems([flight])
+                            self.dataSource.apply(updatedSnapshot, animatingDifferences: true)
+                        }
+                    }
+                }.store(in: &self.subscriptions)
             
             cell.contentConfiguration = content
         }

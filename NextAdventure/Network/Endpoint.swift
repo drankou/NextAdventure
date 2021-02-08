@@ -45,10 +45,4 @@ extension Endpoint {
             ]
         )
     }
-    
-    //    https://images.kiwi.com/whitelabels/280x80/kiwicom.png
-//    /photos/220x165/aalborg_dk.jpg
-//    /airlines/128/0B-grayscale.png
-
-
 }

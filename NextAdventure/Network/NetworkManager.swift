@@ -45,7 +45,7 @@ class NetworkManager {
     }
     
     
-    static func downloadImage(url: String) -> AnyPublisher<UIImage, NetworkError> {
+    func downloadImage(url: String) -> AnyPublisher<UIImage, NetworkError> {
       guard let url = URL(string: url) else {
         return Fail(error: NetworkError.invalidURL).eraseToAnyPublisher()
       }

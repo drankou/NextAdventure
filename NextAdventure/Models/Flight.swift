@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
-struct Flight: Codable, Hashable {
+class Flight: Codable, Hashable {
     var id: String
     var departureTime: Int
     var arrivalTime: Int
@@ -17,8 +18,10 @@ struct Flight: Codable, Hashable {
     var flyTo: String
     var cityTo: String
     var price: Int
+    var destinationID: String
     //availability
     var deepLink: String //clear &amp; -> &
+    var image: UIImage?
     
     private enum CodingKeys: String, CodingKey {
         case id
@@ -28,6 +31,7 @@ struct Flight: Codable, Hashable {
         case cityTo
         case price
         
+        case destinationID = "mapIdto"
         case deepLink = "deep_link"
         case departureTime = "dTimeUTC"
         case arrivalTime = "aTimeUTC"
@@ -44,6 +48,10 @@ struct Flight: Codable, Hashable {
 }
 
 extension Flight {
+    var destinationImageURL: String {
+        return "https://images.kiwi.com/photos/220x165/\(destinationID).jpg"
+    }
+    
     var departureDate: String? {
         return formatString(from: departureTime)
     }

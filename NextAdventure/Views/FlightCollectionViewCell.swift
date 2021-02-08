@@ -36,6 +36,7 @@ class FlightCellContentView: UIView, UIContentView {
         set {
             guard let newConfig = newValue as? FlightCellContentConfiguration else { return }
             apply(configuration: newConfig)
+            updateGradientFrame()
         }
     }
     
@@ -56,6 +57,7 @@ class FlightCellContentView: UIView, UIContentView {
         destinationLabel.text = configuration.cityTo
         dateLabel.text = configuration.departureDate
         priceLabel.text = "\(configuration.price!) €"
+        backgroundImageView.image = configuration.backgroundImage
     }
     
     private func configure(){
@@ -81,19 +83,26 @@ class FlightCellContentView: UIView, UIContentView {
     }
     
     let backgroundImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "homescreen"))
-        imageView.contentMode = .scaleToFill
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = imageView.bounds
-        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.2)
-        gradientLayer.colors = [UIColor.white.withAlphaComponent(0.0).cgColor, UIColor.black.withAlphaComponent(0.6).cgColor]
-        imageView.layer.insertSublayer(gradientLayer, at: 0)
         
         return imageView
     }()
+    
+    let gradientLayer: CAGradientLayer = {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.7)
+        gradientLayer.colors = [UIColor.white.withAlphaComponent(0.0).cgColor, UIColor.black.withAlphaComponent(0.5).cgColor]
+        
+        return gradientLayer
+    }()
+    
+    func updateGradientFrame() {
+        gradientLayer.frame = backgroundImageView.bounds
+        backgroundImageView.layer.insertSublayer(gradientLayer, at: 0)
+    }
     
     let destinationLabel: UILabel = {
         let label = UILabel()
