@@ -54,6 +54,10 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>App uses your current location to find nearest airports.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App uses your current location to find nearest airports.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

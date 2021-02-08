@@ -20,6 +20,12 @@
 		1E91E16B25CEEC84003A0702 /* Sansation-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E91E16425CEEBE2003A0702 /* Sansation-Light.ttf */; };
 		1E91E17025CEF051003A0702 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E91E16F25CEF04F003A0702 /* Roboto-Regular.ttf */; };
 		1E91E17525CEF14D003A0702 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E17425CEF14D003A0702 /* AnimatedButton.swift */; };
+		1E91E19425CEFBF5003A0702 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E19325CEFBF5003A0702 /* ResultsViewController.swift */; };
+		1E91E19B25CF00E3003A0702 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E19A25CF00E3003A0702 /* Flight.swift */; };
+		1E91E1A025CF1CD6003A0702 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E19F25CF1CD6003A0702 /* NetworkManager.swift */; };
+		1E91E1AD25CF2D21003A0702 /* FlightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1AC25CF2D21003A0702 /* FlightCollectionViewCell.swift */; };
+		1E91E1BD25D04B09003A0702 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1BC25D04B09003A0702 /* Endpoint.swift */; };
+		1E91E1C325D05094003A0702 /* UIViewController+UIActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91E1C225D05094003A0702 /* UIViewController+UIActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		1E91E16425CEEBE2003A0702 /* Sansation-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansation-Light.ttf"; sourceTree = "<group>"; };
 		1E91E16F25CEF04F003A0702 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		1E91E17425CEF14D003A0702 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
+		1E91E19325CEFBF5003A0702 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		1E91E19A25CF00E3003A0702 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		1E91E19F25CF1CD6003A0702 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1E91E1AC25CF2D21003A0702 /* FlightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E91E1BC25D04B09003A0702 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		1E91E1C225D05094003A0702 /* UIViewController+UIActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIActivityIndicator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,9 @@
 		1E91E10E25CED963003A0702 /* NextAdventure */ = {
 			isa = PBXGroup;
 			children = (
+				1E91E1C125D0507A003A0702 /* Extensions */,
+				1E91E1B825D00DB0003A0702 /* Network */,
+				1E91E19925CF00D7003A0702 /* Models */,
 				1E91E15225CEDDC7003A0702 /* Views */,
 				1E91E17925CEF228003A0702 /* Controllers */,
 				1E91E17A25CEF231003A0702 /* Supporting Files */,
@@ -141,6 +156,7 @@
 			children = (
 				1E91E15325CEDDD7003A0702 /* HomeView.swift */,
 				1E91E17425CEF14D003A0702 /* AnimatedButton.swift */,
+				1E91E1AC25CF2D21003A0702 /* FlightCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				1E91E11325CED963003A0702 /* HomeViewController.swift */,
+				1E91E19325CEFBF5003A0702 /* ResultsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +190,31 @@
 				1E91E14725CEDA95003A0702 /* AppCoordinator.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E91E19925CF00D7003A0702 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E91E19A25CF00E3003A0702 /* Flight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E91E1B825D00DB0003A0702 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1E91E19F25CF1CD6003A0702 /* NetworkManager.swift */,
+				1E91E1BC25D04B09003A0702 /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1E91E1C125D0507A003A0702 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E91E1C225D05094003A0702 /* UIViewController+UIActivityIndicator.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,11 +350,17 @@
 			files = (
 				1E91E14325CEDA62003A0702 /* Coordinator.swift in Sources */,
 				1E91E11425CED963003A0702 /* HomeViewController.swift in Sources */,
+				1E91E1A025CF1CD6003A0702 /* NetworkManager.swift in Sources */,
 				1E91E17525CEF14D003A0702 /* AnimatedButton.swift in Sources */,
 				1E91E14825CEDA95003A0702 /* AppCoordinator.swift in Sources */,
+				1E91E1AD25CF2D21003A0702 /* FlightCollectionViewCell.swift in Sources */,
+				1E91E1C325D05094003A0702 /* UIViewController+UIActivityIndicator.swift in Sources */,
 				1E91E15425CEDDD7003A0702 /* HomeView.swift in Sources */,
+				1E91E19B25CF00E3003A0702 /* Flight.swift in Sources */,
 				1E91E11025CED963003A0702 /* AppDelegate.swift in Sources */,
 				1E91E11225CED963003A0702 /* SceneDelegate.swift in Sources */,
+				1E91E1BD25D04B09003A0702 /* Endpoint.swift in Sources */,
+				1E91E19425CEFBF5003A0702 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

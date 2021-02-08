@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class AppCoordinator: Coordinator {
     var navigationController: UINavigationController
@@ -19,5 +20,12 @@ class AppCoordinator: Coordinator {
         let vc = HomeViewController()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
+    }
+    
+    func showResults(userCoordinate: CLLocationCoordinate2D) {
+        let resultsVC = ResultsViewController()
+        resultsVC.coordinator = self
+        resultsVC.userCoordinate = userCoordinate
+        navigationController.pushViewController(resultsVC, animated: true)
     }
 }
