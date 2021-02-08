@@ -32,7 +32,12 @@ extension UIViewController {
     
     func hideActivityIndicator() {
         DispatchQueue.main.async {
-            activityIndicatorView?.removeFromSuperview()
+            if let view = activityIndicatorView?.superview {
+                UIView.transition(with: view, duration: 0.5, options: .transitionCrossDissolve, animations: {
+                    activityIndicatorView?.removeFromSuperview()
+                })
+            }
+            
             activityIndicatorView = nil
         }
     }
