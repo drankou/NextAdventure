@@ -48,10 +48,6 @@ class Flight: Codable, Hashable {
 }
 
 extension Flight {
-    var destinationImageURL: String {
-        return "https://images.kiwi.com/photos/220x165/\(destinationID).jpg"
-    }
-    
     var departureDate: String? {
         return formatString(from: departureTime)
     }

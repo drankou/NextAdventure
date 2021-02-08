@@ -14,7 +14,8 @@ final class ImageCache {
     static let placeholder = UIImage(named: "placeholder")!
     private let cache = NSCache<NSURL, UIImage>()
 
-    func loadImage(from url: URL) -> AnyPublisher<UIImage?, Never> {
+    func loadImage(from endpoint: ImagesEndpoint) -> AnyPublisher<UIImage?, Never> {
+        let url = endpoint.url
         if let image = cache.object(forKey: url as NSURL){
             return Just(image).eraseToAnyPublisher()
         }

@@ -55,7 +55,7 @@ class ResultsViewController: UIViewController {
             content.price = flight.price
             content.backgroundImage = flight.image ?? ImageCache.placeholder
             
-            ImageCache.publicCache.loadImage(from: URL(string: flight.destinationImageURL)!)
+            ImageCache.publicCache.loadImage(from: .photos(imageId: flight.destinationID, resolution: .medium))
                 .receive(on: DispatchQueue.main)
                 .sink { (image) in
                     if image != flight.image {
